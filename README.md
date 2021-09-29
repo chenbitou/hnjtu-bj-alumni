@@ -1,37 +1,69 @@
-# 湖南交通学院北京校友小程序
+ 
+# 整体说明
+小程序校友数据基母校开发。由于历史数据繁多，数据库中难免存在疏漏。若无法成功认证身份，请您提交人工审核后耐心等待，或联系校友会由管理员手动审核。
 
-#### 介绍
-湖南交通学院北京校友小程序，小程序校友数据基母校开发。由于历史数据繁多，数据库中难免存在疏漏。若无法成功认证身份，请您提交人工审核后耐心等待，或联系校友会由管理员手动审核。
+ 
 
-#### 软件架构
-软件架构说明
+- 校友数据库目前只收录建院以来全日制本科生、研究生数据，暂不支持教职工、附中、继续教育学院等部门进行认证。未收录部分已纳入系统后期开发计划，敬请期待。 
 
+- 目前在校学生可以正常认证登录，校友类型显示为“在校生”，在校生将在毕业后由校友会统一转换为校友身份。 
 
-#### 安装教程
+- 海外手机号、非大陆学籍校友可能会出现身份认证不成功的情况，请电话联系校友会，由管理员手动认证。 
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- 所有校友数据信息将按照法律规定严格保密，不提供给任何第三方，也不用于任何商业目的。
 
-#### 使用说明
+ 
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+# 首页设计
+校友在进入小程序后，请先进行登录及认证（登录及认证指引参见下文）。完成后请继续点击首页“我的名片”全面完善个人资料，然后即可体验小程序全部功能。
 
-#### 参与贡献
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/224948_09a47bc4_9808082.png "屏幕截图.png")
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+ 
 
+# 注册与认证模块
+ 
 
-#### 特技
+进入小程序后，依次点击“我的”-“点击登录账号”（蓝色线框处）进入校友身份认证环节
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/224952_31b3e1f6_9808082.png "屏幕截图.png")
+
+ 
+
+ 
+
+认证界面如下图所示，已在完成注册认证的校友，请直接点击图标即可一键完成认证注册步骤
+
+ 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/225224_52cbd309_9808082.png "屏幕截图.png")
+ 
+
+ 
+
+若不方便进行实名信息认证，可点击下方人工认证，选择对应校友类型填写验证信息。
+
+ ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/224959_b37fac5d_9808082.png "屏幕截图.png")
+
+ 
+
+ 
+
+ 
+
+# 校友福利模块
+后续将逐步推出“地方校友分会”、“返校预约”、“同学查找”等精彩功能。
+
+ 
+
+# 后台管理模块
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/225003_5281927c_9808082.png "屏幕截图.png")
+ 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/225007_7eec3a1d_9808082.png "屏幕截图.png")
+ 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/225010_3d40ed56_9808082.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/225014_fa66c971_9808082.png "屏幕截图.png")
+
+# 扫码体验
+
+ ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/225049_037264f4_9808082.jpeg "ccplat-小程序QR.jpg")
