@@ -1,0 +1,49 @@
+<block wx:if="{{_params}}">
+	<cmpt-comm-list type="order_list" _params="{{_params}}" search="{{search||''}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="goods/order_list" isTotalMenu="{{true}}" sortMenusDefaultIndex="0" topBottom="120" placeholder="搜索" bind:list="bindCommListCmpt">
+
+		<view slot="searchEnd">
+
+		</view>
+
+		<!-- List Begin -->
+		<view class="text-pic-list-box padding-project">
+
+			<view class="item card-project shadow-project" wx:for="{{dataList.list}}" wx:key="index">
+
+			 
+
+				<view class="title content-cut-two">{{item.ORDER_GOODS_TITLE}}</view>  
+				<view class="author"> 
+					<text wx:if="{{item.ORDER_STATUS==1}}" class="text-blue"><text class="icon-check margin-right-xxs"></text><text>借用中...</text></text> 
+					<text wx:elif="{{item.ORDER_STATUS==9}}" class="text-green"><text class="icon-roundcheck margin-right-xxs"></text><text>已归还</text></text>
+					<text wx:elif="{{item.ORDER_STATUS==0}}" class="text-orange"><text class="icon-close margin-right-xxs"></text><text>系统取消</text></text>  
+				</view> 
+				<view class="author"> 
+					借用时间：<text>{{item.ORDER_ADD_TIME}}</text>
+				</view> 
+				<view wx:if="{{item.ORDER_STATUS==9}}" class="author"> 
+					归还时间：<text>{{item.ORDER_RETURN_TIME}}</text>
+				</view> 
+
+				<view class="author" style="border-bottom: 2rpx dashed #ccc;"></view>
+
+				<view wx:if="{{itm.type!='mobile'}}" class="author" wx:for="{{item.ORDER_FORMS}}" wx:key="k" wx:for-item="itm"> 
+					{{itm.title}}：<text>{{itm.val}}</text>
+				</view>
+
+			</view>
+
+			<!--load begin-->
+			<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+			<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+			<!--load end-->
+
+		</view>
+		<!-- List END -->
+
+	</cmpt-comm-list>
+
+	<!--  button Begin -->
+	<!--  button END -->
+
+</block>

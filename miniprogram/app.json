@@ -1,0 +1,97 @@
+{
+	"pages": [
+		"projects/device/pages/default/index/default_index",
+		"projects/device/pages/about/index/about_index",
+		"projects/device/pages/search/search",
+		"projects/device/pages/my/index/my_index",
+		"projects/device/pages/my/reg/my_reg",
+		"projects/device/pages/my/edit/my_edit",
+		"projects/device/pages/my/foot/my_foot",
+		"projects/device/pages/my/fav/my_fav",
+		"projects/device/pages/news/index/news_index",
+		"projects/device/pages/news/detail/news_detail",
+		"projects/device/pages/admin/news/list/admin_news_list",
+		"projects/device/pages/admin/news/add/admin_news_add",
+		"projects/device/pages/admin/news/edit/admin_news_edit",
+		"projects/device/pages/admin/setup/about/admin_setup_about",
+		"projects/device/pages/admin/setup/about_list/admin_setup_about_list",
+		"projects/device/pages/admin/setup/qr/admin_setup_qr",
+		"projects/device/pages/admin/index/home/admin_home",
+		"projects/device/pages/admin/index/login/admin_login",
+		"projects/device/pages/admin/content/admin_content",
+		"projects/device/pages/admin/mgr/log/admin_log_list",
+		"projects/device/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/device/pages/admin/mgr/list/admin_mgr_list",
+		"projects/device/pages/admin/mgr/add/admin_mgr_add",
+		"projects/device/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/device/pages/admin/user/list/admin_user_list",
+		"projects/device/pages/admin/user/detail/admin_user_detail",
+		"projects/device/pages/admin/user/export/admin_user_export",
+		"projects/device/pages/goods/order_list/goods_order_list",
+		"projects/device/pages/goods/index/goods_index",
+		"projects/device/pages/goods/detail/goods_detail",
+		"projects/device/pages/goods/order/goods_order",
+		"projects/device/pages/goods/my_order_list/goods_my_order_list",
+		"projects/device/pages/admin/goods/order_export/admin_goods_order_export",
+		"projects/device/pages/admin/goods/list/admin_goods_list",
+		"projects/device/pages/admin/goods/add/admin_goods_add",
+		"projects/device/pages/admin/goods/edit/admin_goods_edit",
+		"projects/device/pages/admin/goods/order_list/admin_goods_order_list",
+		"projects/device/pages/admin/cate/list/admin_cate_list",
+		"projects/device/pages/admin/cate/add/admin_cate_add",
+		"projects/device/pages/admin/cate/edit/admin_cate_edit",
+		"cmpts/public/form/form_set/field/form_set_field",
+		"cmpts/public/form/form_show/content/form_show_content",
+		"pages/test1/test1"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#0055BE",
+		"navigationBarTitleText": "设备借用",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#0055BE",
+		"list": [
+			{
+				"pagePath": "projects/device/pages/default/index/default_index",
+				"text": "首页",
+				"iconPath": "/projects/device/images/tabbar/home.png",
+				"selectedIconPath": "/projects/device/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "projects/device/pages/news/index/news_index",
+				"text": "公告",
+				"iconPath": "/projects/device/images/tabbar/news.png",
+				"selectedIconPath": "/projects/device/images/tabbar/news_cur.png"
+			},
+			{
+				"pagePath": "projects/device/pages/goods/index/goods_index",
+				"text": "仓库",
+				"iconPath": "/projects/device/images/tabbar/goods.png",
+				"selectedIconPath": "/projects/device/images/tabbar/goods_cur.png"
+			},
+			{
+				"pagePath": "projects/device/pages/my/index/my_index",
+				"text": "我的",
+				"iconPath": "/projects/device/images/tabbar/my.png",
+				"selectedIconPath": "/projects/device/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

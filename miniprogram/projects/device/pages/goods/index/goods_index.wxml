@@ -1,0 +1,38 @@
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l text-grey"></view>
+<block wx:if="{{isLoad}}">
+	<cmpt-comm-list pulldownType="{{['modal','modal','modal','modal','modal']}}" type="goods-list" sortMenusDefaultIndex="0" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="goods/list" topBottom="120" placeholder="搜索" bind:list="bindCommListCmpt">
+
+		<view class="list">
+			<view class="item shadow-project" wx:for="{{dataList.list}}" wx:key="key" bindtap="url" data-url="../detail/goods_detail?id={{item._id}}">
+
+				<image mode="aspectFill" class="loading" lazy-load="{{true}}" src="{{item.GOODS_OBJ.cover[0]}}">
+					<text>{{item.GOODS_CATE_NAME}}</text>
+				</image>
+				<view class="right">
+					<view class="title content-cut-two"> {{item.GOODS_TITLE}} </view>
+					<view class="oprt">
+						<text class="cnt">借用{{item.GOODS_SALE_CNT}}次</text>
+						<text wx:if="{{item.GOODS_STATUS==2}}" class="bb bg-green light">借用中</text>
+						<text wx:elif="{{item.GOODS_STATUS==1}}" class="bb bg-blue light">可借用</text>
+						<text wx:elif="{{item.GOODS_STATUS==9}}" class="bb bg-orange light">已损坏</text>
+					</view>
+				</view>
+
+
+			</view>
+
+		</view>
+
+		<!--load begin-->
+		<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+		<!--load end-->
+
+	</cmpt-comm-list>
+
+	<block wx:if="{{skin.IS_SUB}}">
+		<import src="../../tpls/menu_tpl.wxml" />
+		<template is="menuTpl" data="{{curMenu:'goods_index',returnHome:false}}" />
+	</block>
+
+</block>

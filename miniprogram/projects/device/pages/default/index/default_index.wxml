@@ -1,0 +1,38 @@
+<view class="main">
+	<view class="top">
+		<image mode="widthFix" src="../../../images/home.jpg" class="loading" />
+	</view>
+
+	<view class="box">
+		<view class="inner">
+			<view class="item" bindtap="url" data-type="relaunch" data-url="../../news/index/news_index">
+				<text class="ix icon-form"></text>
+				<view class="title">公告通知</view>
+			</view>
+
+			<view class="item" bindtap="bindScanTap">
+				<text class="ix icon-qr_code"></text>
+				<view class="title">扫码借用</view>
+			</view>
+
+			<view class="item" bindtap="bindScanTap">
+				<text class="ix icon-scan"></text>
+				<view class="title">设备归还</view>
+			</view>
+
+
+
+			<view class="item" bindtap="url" data-type="relaunch" data-url="../../my/index/my_index">
+				<text class="ix icon-people"></text>
+				<view class="title">个人中心</view>
+			</view>
+		</view>
+
+	</view>
+
+</view>
+
+<block wx:if="{{skin.IS_SUB}}">
+	<import src="../../tpls/menu_tpl.wxml" />
+	<template is="menuTpl" data="{{curMenu:'home_index',returnHome:false}}" />
+</block>

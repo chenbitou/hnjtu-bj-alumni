@@ -1,0 +1,73 @@
+<block wx:if="{{isAdmin&&_params}}">
+	<cmpt-comm-list source='admin' _params="{{_params}}" type="admin-order-list" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="admin/order_list" sortMenusDefaultIndex="0" topBottom="50" placeholder="搜索{{id?'':'设备，'}}姓名，手机" bind:list="bindCommListCmpt">
+
+		<view slot="searchEnd">
+			<!--<text class="icon-scan margin-right text-xxl"></text>-->
+		</view>
+		<!-- List Begin -->
+		<view class="admin-comm-list">
+			<view wx:if="{{dataList && dataList.total }}" class="load text-grey">共有{{dataList.total}}条符合条件记录</view>
+
+			<view class="item" wx:for="{{dataList.list}}" wx:key="key">
+				<view class="no">{{index+1}}</view>
+
+				<view class="info">
+					<view class="info-item">
+						<view class="title">设备</view>
+						<view class="mao">：</view>
+						<view class="content">《{{item.ORDER_GOODS_TITLE}}》 </view>
+					</view>
+					<view class="info-item">
+						<view class="title">状态</view>
+						<view class="mao">：</view>
+						<view class="content">
+							<text wx:if="{{item.ORDER_STATUS==0}}" class="text-black">系统已取消</text>
+							<text wx:elif="{{item.ORDER_STATUS==1}}" class="text-blue"><text class="icon-check margin-right-xxs"></text>借用中...</text>
+							<text wx:elif="{{item.ORDER_STATUS==9}}" class="text-green"><text class="icon-roundcheckfill"></text>已归还</text>
+						</view>
+					</view>
+
+					<view class="info-item">
+						<view class="title">借用时间</view>
+						<view class="mao">：</view>
+						<view class="content">{{item.ORDER_ADD_TIME}}</view>
+					</view>
+
+					<view wx:if="{{item.ORDER_STATUS==9}}" class="info-item">
+						<view class="title">归还时间</view>
+						<view class="mao">：</view>
+						<view class="content">{{item.ORDER_RETURN_TIME}}</view>
+					</view>
+
+					<view class="info-item" style="border-bottom: 2rpx dashed #ccc;">
+
+					</view>
+
+					<view class="info-item" wx:for="{{item.ORDER_FORMS}}" wx:key="k" wx:for-item="itm">
+						<view class="title">{{itm.title}}</view>
+						<view class="mao">：</view>
+						<view class="content">{{itm.val}}</view>
+					</view>
+
+					<view class="oprt">
+
+						<view wx:if="{{item.ORDER_STATUS==1}}" bindtap="bindStatusTap" data-id="{{item._id}}" data-status="9" class="btn round margin-right-s"><text class="icon-check margin-right-xxs text-green"></text>设为已归还</view>
+
+						<view wx:if="{{item.ORDER_STATUS==9}}" bindtap="bindStatusTap" data-id="{{item._id}}" data-status="1" class="btn round margin-right-s">设为借用中</view>
+
+					</view>
+				</view>
+			</view>
+
+		</view>
+		<!-- List END -->
+
+		<!--load begin-->
+		<import src="../../../../../../tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{dataList,skin:'text-grey'}}" />
+		<!--load end-->
+
+
+	</cmpt-comm-list>
+
+</block>
