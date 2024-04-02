@@ -1,6 +1,7 @@
 ## 功能介绍 
 
-![输入图片说明](demo/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+ ![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/27fbd428-d624-4a5c-9759-7602982e6147)
+
 
 实验室设备借用小程序，适合各大高校，科技园区，大型企业集团的实验室设备借用流程, 通过数字化的手段进一步提升相关单位设备保障水平，规范实验室和设备管理，用户通过手机小程序扫描设备的二维码，可以方便快捷的提交个人资料，办理借用手续，从而大大提高了工作效率，其主要功能如下：
 - 1.设备清单： 展示实验室内的设备分类，设备列表，包括设备名称、规格、当前状态等。
@@ -15,7 +16,8 @@
 - 3 借用记录管理：可以多维度导出借用记录Excel; 
 - 4 用户管理：可以查看，导出用户记录，并暂停某用户使用。
 
-![输入图片说明](demo/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E8%AE%BE%E5%A4%87%E5%80%9F%E7%94%A8%20(2).jpg)
+ ![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/5f30b382-72b7-4fac-98cc-5c3fefe29a08)
+
  
 
 
@@ -29,7 +31,8 @@
 
 
 ## 演示 
- ![输入图片说明](demo/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+ ![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/21194247-1237-4ac1-b957-b950dd56e765)
+
 
 ## 安装
 
@@ -37,35 +40,32 @@
 
 
 ## 截图
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/dbe7e65f-ea3e-419c-aae4-5b4116660d70)
 
-![输入图片说明](demo/1%E9%A6%96%E9%A1%B5.png)
-![输入图片说明](demo/2%E5%85%AC%E5%91%8A.png)
-![输入图片说明](demo/3%E4%BB%93%E5%BA%93.png)
-![输入图片说明](demo/4%E4%BB%93%E5%BA%93.png)
-![输入图片说明](demo/5%E8%AF%A6%E6%83%85.png)
- ![输入图片说明](demo/6%E5%80%9F%E7%94%A8.png)
-![输入图片说明](demo/7%E5%80%9F%E7%94%A8.png)
-![输入图片说明](demo/8%E6%88%91%E7%9A%84.png)
-![输入图片说明](demo/9%E6%88%91%E7%9A%84.png)
+ ![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/2f641b33-19a0-4664-a3ba-af15cfaa4a45)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/156c994f-a95e-4284-9b37-1a8b91d9ab9e)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/6ba36377-1c6d-4ee0-8544-d75287e10f0c)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/c266080f-3044-4c38-b374-75a15f986890)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/8d3fdb18-25b0-4d53-867c-285d1d531074)
 
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/c9fc7153-9dd2-41fa-9e63-d08b17915a8c)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/a5278dcd-c147-4090-a77f-c944e7eda906)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/907857f0-3d66-4a4d-b18c-599a2ab1dfb3)
 
 
 ## 后台管理系统截图 
 - 后台超级管理员默认账号:admin，密码123456，请登录后台后及时修改密码和创建普通管理员。
 
-![输入图片说明](demo/80%E5%90%8E%E5%8F%B0-%E9%A6%96%E9%A1%B5.png)
-![输入图片说明](demo/81%E5%90%8E%E5%8F%B0-%E5%88%86%E7%B1%BB%E7%AE%A1%E7%90%86.png)
+ ![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/36c2a4b5-37df-418e-9eb4-7d5c7f298ab1)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/d3cd5273-d7d2-470c-ac15-0f23cc73744b)
 
-![输入图片说明](demo/82%E5%90%8E%E5%8F%B0-%E8%AE%BE%E5%A4%87.png)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/8f4de5be-aea8-4e45-b215-c6ed4cd2e67c)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/fb8ec898-c4d1-4047-bd08-db95e71eb348)
 
-![输入图片说明](demo/83%E5%90%8E%E5%8F%B0-%E8%AE%BE%E5%A4%87.png)
-![输入图片说明](demo/84%E5%90%8E%E5%8F%B0-%E5%80%9F%E7%94%A8%E8%AE%B0%E5%BD%95.png)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/f8c6374c-9356-4226-9a19-7c6125c20732)
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/4782380f-f035-4eca-bd8c-3bedd43c4154)
 
-![输入图片说明](demo/85%E5%90%8E%E5%8F%B0-%E5%AF%BC%E5%87%BA.png)
-
-![输入图片说明](demo/87%E5%90%8E%E5%8F%B0-excel.png)
-
-
+![image](https://github.com/chenbitou/hnjtu-bj-alumni/assets/100322078/ba3a5d0c-39a1-498f-9ec0-8669ebfa28a8)
 
 
 
